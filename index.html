@@ -1,105 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <head>
-        <!-- Google Fonts Pre Connect -->
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Fontawesome Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-        <!-- Meta Tags -->
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Image Title -->
+    <link rel="icon" type="image/png" href="images/hassnaa.jpg" />
 
-        <!-- Fontawesome Cdn -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS Files Links -->
+    <link rel="stylesheet" href="./css/style.css" />
 
-        <!-- Image Title -->
-        <link rel="icon" type="image/png" href="images/hassnaa.jpg" />
+    <!-- Title -->
+    <title>CV-DASHBOARD</title>
+  </head>
 
-        <!-- CSS Files Links -->
-        <link rel="stylesheet" href="./css/style.css">
-
-        <!-- Title -->
-        <title>DASHBOARD</title>
-    </head>
-
-    <body>
-        <div class="page">
-            <aside>
-                <div>
-                    <div class="logo-img">
-                        <img src="images/hassnaa.jpg" alt="logo">
-                    </div>
-                    <a href="index.html" class="active">
-                        <h1>hassnaa mahmoud</h1>
-                    </a>
-                </div>
-                <div class="theme">
-                    <i onclick="changeMoodMoon()" class="fa-solid fa-moon moon"></i>
-                    <i onclick="changeMoodSun()" class="fa-solid fa-sun sun"></i>
-                </div>
-                <ul>
-                    <li><a href="info.html"> <i class="fa-solid fa-circle-info"></i>
-                            <h2>information</h2>
-                        </a></li>
-                    <li><a href="education.html"> <i class="fa-solid fa-graduation-cap"></i>
-                            <h2>education</h2>
-                        </a></li>
-                    <li><a href="experience.html"> <i class="fa-solid fa-briefcase"></i>
-                            <h2>experience</h2>
-                        </a></li>
-                    <li><a href="hard.html"> <i class="fa-solid fa-code-branch"></i>
-                            <h2>hard skills</h2>
-                        </a></li>
-                    <li><a href="soft.html"> <i class="fa-solid fa-users"></i>
-                            <h2>soft skills</h2>
-                        </a></li>
-                    <li><a href="courses.html"> <i class="fa-solid fa-book-open"></i>
-                            <h2>courses</h2>
-                        </a></li>
-                    <li><a href="certificate.html"><i class="fa-solid fa-certificate"></i>
-                            <h2>certificates</h2>
-                        </a></li>
-                    <li><a href="projects.html"> <i class="fa-solid fa-bars-progress"></i>
-                            <h2>projects</h2>
-                        </a></li>
-                    <li><a href="qustions.html"> <i class="fa-solid fa-circle-question"></i>
-                            <h2>q & a</h2>
-                        </a></li>
-                    <li><a href="contact.html"> <i class="fa-solid fa-phone-volume"></i>
-                            <h2>contact us</h2>
-                        </a></li>
-                </ul>
-            </aside>
-            <div class="container">
-                <div class="information circle">
-                    <h1>this is my cv.</h1>
-                    <img src="images/hassnaa.jpg" alt="hassnaa">
-                </div>
-                <!-- <div class="education circle">
-                </div>
-                <div class="experience circle">
-                </div>
-                <div class="hard circle">
-                </div>
-                <div class="soft circle">
-                </div>
-                <div class="courses circle">
-                </div> -->
-                <!-- <div class="certificates circle">
-                </div>
-                <div class="projects circle">
-                </div>
-                <div class="qustions circle">
-                </div>
-                <div class="contact circle">
-                </div> -->
+  <body>
+    <div class="page">
+      <aside>
+        <div>
+          <div class="logo-img">
+            <img src="images/hassnaa.jpg" alt="logo" />
+          </div>
+          <a href="index.html">
+            <h1>hassnaa mahmoud</h1>
+          </a>
+        </div>
+        <div class="theme">
+          <i onclick="changeMoodMoon()" class="fa-solid fa-moon moon"></i>
+          <i onclick="changeMoodSun()" class="fa-solid fa-sun sun"></i>
+        </div>
+        <ul>
+          <li id="about">
+            <a href="#">
+              <i class="fa-solid fa-circle-info"></i>
+              <h2>about me</h2>
+            </a>
+          </li>
+          <li id="skills">
+            <a href="#">
+              <i class="fa-solid fa-code-branch"></i>
+              <h2>skills</h2>
+            </a>
+          </li>
+          <li id="certificate">
+            <a href="#"
+              ><i class="fa-solid fa-certificate"></i>
+              <h2>certificates</h2>
+            </a>
+          </li>
+          <li id="project">
+            <a href="#">
+              <i class="fa-solid fa-bars-progress"></i>
+              <h2>projects</h2>
+            </a>
+          </li>
+          <li id="contact">
+            <a href="#">
+              <i class="fa-solid fa-phone-volume"></i>
+              <h2>contact us</h2>
+            </a>
+          </li>
+        </ul>
+      </aside>
+      <div class="container">
+        <div class="about">
+          <i class="fa-solid fa-circle-info"></i>
+          <div>
+            <div>
+              <h2>-name:</h2>
+              <p>-Hassnaa Mahmoud Abdel-Mohsen.</p>
             </div>
+            <div>
+              <h2>-phone:</h2>
+              <p>-01000000000</p>
+              <p>-0452920000</p>
+            </div>
+            <div>
+              <h2>-email:</h2>
+              <p>-hassnaamahmoud96<wbr />@gmail.com</p>
+            </div>
+            <div>
+              <h2>-address:</h2>
+              <p>-Egypt Elbeheira.</p>
+            </div>
+            <div>
+              <h2>-education:</h2>
+              <p>1-Diploma in Sharia Sciences.</p>
+              <p>2-Faculty of Higher Nursing.</p>
+              <p>(Alexandria University.)</p>
+            </div>
+            <div>
+              <h2>-work:</h2>
+              <p>-Frontend Web Developer</p>
+              <p>-Freelancer</p>
+            </div>
+            <div style="margin-bottom: 30px; cursor: pointer">
+             <a href="./images/FrontendDeveloper.pdf" download="CV.pdf">
+              <i class="fa-solid fa-file-pdf" style="color: #de2429"></i>
+              <p style="display: inline-block;color: #000;">CV pdf</p>
+             </a>
+            </div>
+          </div>
         </div>
 
-        <noscript>Your browser don't support JavaScript!</noscript>
-        <script src="./js/main.js"></script>
-    </body>
+        <div class="certificates">
+          <i class="fa-solid fa-certificate"></i>
+          <div>
+            <p>**-Frontend Masters - JavaScript: The Hard Parts.</p>
+            <p>**-Udacity - Front End Web Developer Nanodegree.</p>
+            <p>
+              **-Coursera - HTML, CSS, and Javascript for Web Developers (by
+              Johns Hopkins University).
+            </p>
+            <p>**-frontend design in freeCodeCamp.</p>
+            <p>**-Codecademy - Learn Front-End Development.</p>
+            <p>**-Udemy - The Complete Web Developer Course 2.0.</p>
+            <p>**-MDN Web Docs - Learning Web Development.</p>
+            <p>**-Frontend Masters - Complete Intro to Web Development, v2.</p>
+            <p>**-digital markiting.</p>
+            <p>**-html/html5.</p>
+            <p>**-css/css3.</p>
+            <p>**-javascript.</p>
+            <p>**-vue/react.</p>
+          </div>
+        </div>
 
+        <div class="skills">
+          <div>
+            <div>
+              <i class="fa-solid fa-code-branch"></i>
+              <h2>**hard skills:</h2>
+              <p>*-programming fundamentals .</p>
+              <p>*-HTML & HTML5 .</p>
+              <p>*-cSS & CSS3 & Animate CSS .</p>
+              <p>*-sass .</p>
+              <p>*-javaScript - oop .</p>
+              <p>*-eS6 .</p>
+              <p>*-react .</p>
+              <p>*-vue .</p>
+              <p>*-angular .</p>
+              <p>*-jQuery .</p>
+              <p>*-ajax .</p>
+              <p>*-git & gitHub .</p>
+              <p>*-hosting & domain .</p>
+            </div>
+            <div>
+              <i class="fa-solid fa-users"></i>
+              <h2>**soft skills:</h2>
+              <p>*-Communication Skills</p>
+              <p>*-Teamwork</p>
+              <p>*-Adaptability</p>
+              <p>*-Problem-Solving</p>
+              <p>*-Time Management</p>
+              <p>*-Leadership</p>
+              <p>*-Creativity</p>
+              <p>*-Conflict Resolution</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects">
+          <i class="fa-solid fa-bars-progress"></i>
+          <a target="_blank" href="https://hassnaam.github.io/khamsat-clone/"
+            >**-khamsat-clone.</a
+          >
+          <a
+            target="_blank"
+            href="https://hassnaam.github.io/product-management-system-crud-js/"
+            >**-product-management-system-crud.</a
+          >
+          <a target="_blank" href="https://hassnaam.github.io/tailwind-project/"
+            >**-tailwind-project.</a
+          >
+          <a target="_blank" href="https://hassnaam.github.io/Jewelry-Website/"
+            >**-Jewelry-Website.</a
+          >
+          <a target="_blank" href="https://hassnaam.github.io/CRUDS-Operation/"
+            >**-CRUDS-Operation.</a
+          >
+          <a
+            target="_blank"
+            href="https://hassnaam.github.io/advice-generator-app/"
+            >**-advice-generator-app.</a
+          >
+          <a href="https://burger-website-murex.vercel.app/#" target="_blank"
+            >**-burger-website.</a
+          >
+          <a
+            href="https://facebook-clone-three-khaki.vercel.app/"
+            target="_blank"
+            >**-facebook-clone.</a
+          >
+        </div>
+
+        <div class="contact">
+          <i class="fa-solid fa-hashtag"></i>
+          <a
+            href="https://www.linkedin.com/in/hassnaa-mahmoud-b88a7a225/"
+            target="_blank"
+            >-<i class="fa-brands fa-linkedin"></i>-</a
+          >
+          <a href="https://github.com/HASSNAAM" target="_blank"
+            >-<i class="fa-brands fa-github"></i>-</a
+          >
+          <a href="https://www.freecodecamp.org/Hassnaa-Mahmoud" target="_blank"
+            >-<i class="fa-brands fa-free-code-camp"></i>--</a
+          >
+          <a
+            href="https://www.frontendmentor.io/profile/HASSNAAM"
+            target="_blank"
+            ><img
+              src="./images/frontendmentor.png"
+              alt="frontendmentor"
+              style="border-radius: 50%"
+          /></a>
+          <a href="https://www.codewars.com/users/HASSNAAM" target="_blank"
+            >--<img src="./images/codewares.svg" alt="codewares"
+          /></a>
+          <a href="https://codepen.io/HASSNAAM" target="_blank"
+            >--<i class="fa-brands fa-codepen"></i>-</a
+          >
+          <a
+            href="https://stackoverflow.com/users/22111011/hassnaa-mahmoud"
+            target="_blank"
+            >-<i class="fa-brands fa-stack-overflow"></i>-</a
+          >
+          <a href="mailto:hassnaamahmoud96@gmail.com">
+            -<i class="fa-solid fa-envelope"></i>-
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <noscript>Your browser don't support JavaScript!</noscript>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
